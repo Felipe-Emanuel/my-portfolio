@@ -5,6 +5,8 @@
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Image from "next/image";
 import Me from "../../../public/images/Me.jpeg";
+import TripleTen from "../../../public/images/About/TripleTenLogo.jpeg"
+
 
 export function HomeIcon() {
   return (
@@ -379,27 +381,21 @@ export function FelipeIcon() {
   );
 }
 
-export function PracticumIcon() {
+export function TripleTenIcon() {
   return (
-    <svg
-      className="w-8 h-8 bg-white rounded-full ring-1 ring-orangeDark"
-      viewBox="0 0 200.000000 200.000000"
-    >
-      <g
-        transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)"
-        fill="#000000"
-        stroke="none"
-      >
-        <path
-          d="M890 1919 c-41 -5 -113 -20 -160 -35 -166 -51 -280 -124 -406 -256
-        -276 -293 -327 -730 -127 -1088 67 -119 224 -276 343 -343 520 -291 1165 -37
-        1343 528 139 441 -74 920 -495 1114 -99 46 -174 67 -288 81 -94 11 -103 11
-        -210 -1z m390 -494 l0 -75 -225 0 -225 0 0 -190 0 -190 225 0 225 0 0 -80 0
-        -80 -225 0 -225 0 -2 -182 -3 -183 -72 -3 -73 -3 0 531 0 530 300 0 300 0 0
-        -75z m190 -265 l0 -170 -70 0 -70 0 0 170 0 170 70 0 70 0 0 -170z"
-        />
-      </g>
-    </svg>
+    <div className="h-8 w-8 bg-white rounded-full ring-1 ring-orangeDark">
+      <Image
+        placeholder="blur"
+        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mOMDYutBwADuQGRo8ohBwAAAABJRU5ErkJggg=="
+        width={100}
+        height={100}
+        quality={100}
+        className={`w-full h-full rounded-full`}
+        src={TripleTen}
+        alt="TripleTen Bootcamp"
+      />
+    </div>
+  
   );
 }
 

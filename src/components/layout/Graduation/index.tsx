@@ -32,7 +32,7 @@ export function Graduation({ content }: GraduationProps) {
       >
         <Image
           src={content.graduationImage}
-          alt="Practicum bootcamp logo"
+          alt="TrippleTen bootcamp logo"
           width={100}
           height={100}
           className="rounded-full w-5 h-5 md:h-full md:w-full"

@@ -1,9 +1,8 @@
-import { FelipeIcon, PracticumIcon, UdemyIcon } from "@icons/index";
-
+import { FelipeIcon, TripleTenIcon, UdemyIcon } from "@icons/index";
 export const OwnerList: {
   [key: string]: JSX.Element;
 } = {
   Udemy: <UdemyIcon />,
-  Practicum: <PracticumIcon />,
+  TripleTen: <TripleTenIcon />,
   Felipe: <FelipeIcon />,
 };
