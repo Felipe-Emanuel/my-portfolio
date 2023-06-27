@@ -1,5 +1,5 @@
 import { TooltipComp } from "@util/tools/TooltipComp";
-import { CssIcon, FirebaseIcon, HtmlIcon, JavascriptIcon, NextJstIcon, ReactIcon, TailwindcssIcon, TypescriptIcon } from "@icons/index";
+import { CssIcon, FirebaseIcon, HtmlIcon, JavascriptIcon, JestIcon, NextJstIcon, ReactIcon, SassIcon, TailwindcssIcon, TestingLibraryIcon, TypescriptIcon } from "@icons/index";
 
 interface ColoredIconsListProps {
   techs: string[];
@@ -15,7 +15,10 @@ const techList: {
   Firebase: <FirebaseIcon />,
   Javascript: <JavascriptIcon />,
   html: <HtmlIcon />,
-  Css: <CssIcon />
+  Css: <CssIcon />,
+  Sass: <SassIcon />,
+  Jest: <JestIcon />,
+  TestingLibrary: <TestingLibraryIcon />,
 };
 
 export function ColoredIconsList({ techs }: ColoredIconsListProps) {

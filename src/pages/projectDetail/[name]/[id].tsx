@@ -33,11 +33,11 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     const { name } = context.params || "";
     const normalizedName = String(name).replaceAll(" ", "-").toLowerCase();
 
-    const response = await prismic.getByUID("project", normalizedName, {});
+    const response = await prismic?.getByUID("project", normalizedName, {});
 
     const content = {
-      id: response.id,
-      title: RichText.asText(response.data.title),
+      id: response?.id,
+      title: RichText.asText(response?.data?.title),
       image: response.data.main_image.url,
       posters: response.data.posters.map(
         (poster: postersType) => poster.poster.url

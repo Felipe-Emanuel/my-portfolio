@@ -1,8 +1,8 @@
 import { AiFillHtml5 } from "react-icons/ai";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
-import { DiJavascript1, DiCss3Full } from "react-icons/di";
-import { SiTypescript, SiTailwindcss, SiFirebase } from "react-icons/si";
+import { DiJavascript1, DiCss3Full, DiSass } from "react-icons/di";
+import { SiTypescript, SiTailwindcss, SiFirebase, SiTestinglibrary, SiJest } from "react-icons/si";
 
 interface IconsListProps {
   techs: string[];
@@ -19,6 +19,9 @@ const techList: {
   Javascript: <DiJavascript1 className="sm:w-10 sm:h-10" />,
   html: <AiFillHtml5 className="sm:w-10 sm:h-10" />,
   Css: <DiCss3Full className="sm:w-10 sm:h-10" />,
+  Sass: <DiSass className="sm:w-10 sm:h-10" />,
+  TestingLibrary: <SiTestinglibrary className="sm:w-10 sm:h-10" />,
+  Jest: <SiJest className="sm:w-10 sm:h-10" />,
 };
 
 export function IconsList({ techs }: IconsListProps) {
